@@ -5,14 +5,13 @@ axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
 export const fetchContact = createAsyncThunk('contacts/fetchAll', async () => {
   const response = await axios.get('/contacts');
-  console.log(response.data);
+
   return response.data;
 });
 
 export const addContact = createAsyncThunk(
   'contacts/addContact',
   async string => {
-    console.log(string);
     const response = await axios.post('/contacts', string);
 
     return response.data;

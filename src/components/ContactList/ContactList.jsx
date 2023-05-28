@@ -24,8 +24,6 @@ export const ContactList = () => {
 
   const filterContacts = filterCorrectData();
 
-  console.log(contacts);
-  console.log(filterContacts);
   return (
     <List>
       {filterContacts?.map(({ id, name, number }) => {
