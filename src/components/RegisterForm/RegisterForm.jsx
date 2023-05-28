@@ -35,7 +35,7 @@ const RegisterForm = () => {
           <Input
             type="text"
             name="name"
-            value={name}
+            placeholder="Elsa Roise"
             required
             onChange={event => setName(event.target.value)}
           />
@@ -45,7 +45,7 @@ const RegisterForm = () => {
           <Input
             type="email"
             name="email"
-            value={email}
+            placeholder="elsa@gmail.com"
             required
             onChange={event => setEmail(event.target.value)}
           />
@@ -55,7 +55,6 @@ const RegisterForm = () => {
           <Input
             type="password"
             name="password"
-            value={password}
             required
             onChange={event => setPassword(event.target.value)}
           />
